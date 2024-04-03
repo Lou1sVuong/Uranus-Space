@@ -1,10 +1,9 @@
-import CommingSoon from "./page/commingsoon/CommingSoon"
-
+import ComingSoon from "./page/comingsoon/ComingSoon"
 function App() {
 
   return (
     <>
-    <CommingSoon />
+    <ComingSoon />
     </>
   )
 }
