@@ -34,7 +34,9 @@ function SamplePrevArrow(props) {
 
 function CustomArrows() {
     const settings = {
-        dots: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -45,26 +47,38 @@ function CustomArrows() {
     }
 
     return (
-        <div className="w-4/5 m-auto">
-            <div className="mt-20">
-                <Slider {...settings}>
-                    {roadMapData.map((d) => (
-                        <div
-                            key={d.id}
-                            className="bg-red-200 h-[450px] text-[#FFF] rounded-xl"
-                        >
-                            <div className="flex text-center h-[70%] bg-[#826DF9] flex-col items-center justify-center rounded-t-xl gap-4 p-4">
-                                <p className="text-center">{d.title}</p>
-                                <p classNam>{d.content}</p>
-                            </div>
-                            <div className="h-[30%] bg-[#BC57C4] flex justify-center items-center rounded-b-xl">
-                                {d.title}
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+        <>
+            <div className="bg-background">
+                <div className="w-4/5 m-auto">
+                    <h4 className="text-primary gap-3 text-5xl flex justify-center pt-10 font-bold ">
+                        The{' '}
+                        <span className=" bg-gradient02 text-5xl font-bold  bg-clip-text text-transparent">
+                            RoadMap
+                        </span>
+                    </h4>
+                    <div className="pt-10">
+                        <Slider {...settings}>
+                            {roadMapData.map((d) => (
+                                <div
+                                    key={d.id}
+                                    className="bg-transparent border-4 border-[#1F2441] h-[450px] text-[#FFF] rounded-xl"
+                                >
+                                    <div className="flex text-center h-[70%] border-1 border-b border-border  flex-col justify-center rounded-t-xl gap-4 p-4">
+                                        <p className="text-center font-semibold text-bg">
+                                            {d.title}
+                                        </p>
+                                        <p classNam>{d.content}</p>
+                                    </div>
+                                    <div className="h-[30%]  flex justify-center items-center rounded-b-xl">
+                                        {d.title}
+                                    </div>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
