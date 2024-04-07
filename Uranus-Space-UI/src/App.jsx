@@ -1,11 +1,13 @@
-import ComingSoon from "./page/comingsoon/ComingSoon"
-function App() {
+import Header from '@/components/Header/Header'
+import Home from './pages/home/Home'
 
-  return (
-    <>
-    <ComingSoon />
-    </>
-  )
+function App() {
+    return (
+        <>
+            <Header />
+            <Home />
+        </>
+    )
 }
 
 export default App
