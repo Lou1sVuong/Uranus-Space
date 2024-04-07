@@ -6,7 +6,7 @@ import ArrowDown from '@assets/svg/ArrowDown'
 import LaunchPad from '@/assets/svg/LaunchPad'
 function Header() {
     return (
-        <nav className="flex justify-between items-center px-40 py-5 bg-bgsecondary fixed top-0 w-full text-primary">
+        <nav className="flex justify-between items-center px-40 py-5 bg-background border-b-[1px] z-20 border-border fixed top-0 w-full text-primary">
             <div className="flex gap-10">
                 <div>
                     <img className="w-[10rem]" src={logo} alt="UranusLogo" />

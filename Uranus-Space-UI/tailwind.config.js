@@ -6,9 +6,10 @@ export default {
             colors: {
                 background: '#0F051D',
                 // background: 'rgb(229 246 255)',
-                bgsecondary: '#042337',
+                bgsecondary: '#293364',
                 captiontext: '#B7B4BB',
                 primary: '#FFF',
+                border: '#293364',
             },
             backgroundImage: {
                 // Gradients
