@@ -4,18 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Background & Text
-        // 'bg': '#2B2B2B',
-        // 'bgsecondary': '#3B3B3B',
-        // 'captiontext': '#858584',
-        // 'textW': '#FFF',
-        // // Call to Action
-        // 'callAcction': '#A259FF',
+        background: "#0F051D",
+        bgsecondary: "#3B3B3B",
+        captiontext: "#B7B4BB",
+        whiteText: "#FFF",
       },
       backgroundImage: {
         // Gradients
-        // 'gradient1': 'linear-gradient(101deg, #A259FF 13.57%, #FF6250 97.65%)',
-        // 'gradient2': 'linear-gradient(128deg, #A259FF 49.75%, #377DF7 136.56%)',
+        gradient01: "linear-gradient(108deg, #342b98 13.57%, #4799c1 97.65%)",
+        gradient02: "linear-gradient(62deg, #342b98 13.57%, #4799c1 97.65%)",
       },
     },
   },
