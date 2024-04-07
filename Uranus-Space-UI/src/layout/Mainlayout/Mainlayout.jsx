@@ -1,7 +1,6 @@
 import Header from '@/components/Header/Header'
-import React from 'react'
 
-function Mainlayout({ children }) {
+function MainLayout({ children }) {
     return (
         <div>
             <Header />
@@ -10,4 +9,4 @@ function Mainlayout({ children }) {
     )
 }
 
-export default Mainlayout
+export default MainLayout

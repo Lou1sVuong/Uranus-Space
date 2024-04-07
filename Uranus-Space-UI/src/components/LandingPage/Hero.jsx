@@ -1,8 +1,7 @@
-import Outline from '@/assets/svg/hero/Outline'
-import React from 'react'
-import LaunchPad from '@/assets/image/rocket.png'
-import Money from '@/assets/image/money.png'
 import Clock from '@/assets/image/clock.png'
+import Money from '@/assets/image/money.png'
+import LaunchPad from '@/assets/image/rocket.png'
+import Outline from '@/assets/svg/hero/Outline'
 import { ReactTyped } from 'react-typed'
 import Button from '../Common/Button/Button'
 
@@ -10,7 +9,7 @@ function Hero() {
     return (
         <div
             id="#Home"
-            className="flex bg-background w-full px-40 py-40 gap-9 font-bold  text-primary"
+            className="flex bg-background w-full px-40 py-32 gap-9 font-bold  text-primary"
         >
             <div className="flex flex-col gap-5 w-[45%]">
                 <h1 className="text-7xl">Uranus Space</h1>

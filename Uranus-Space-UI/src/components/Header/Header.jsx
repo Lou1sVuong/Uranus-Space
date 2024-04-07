@@ -1,9 +1,7 @@
-import React from 'react'
-import logo from '@assets/logo/uranusLogoText.png'
-import solana from '@assets/chain/solana.jpg'
-import Button from '@Common/Button/Button'
-import ArrowDown from '@assets/svg/ArrowDown'
 import LaunchPad from '@/assets/svg/LaunchPad'
+import Button from '@Common/Button/Button'
+import logo from '@assets/logo/uranusLogoText.png'
+import ArrowDown from '@assets/svg/ArrowDown'
 function Header() {
     return (
         <nav className="flex justify-between items-center px-40 py-5 bg-background border-b-[1px] z-20 border-border fixed top-0 w-full text-primary">

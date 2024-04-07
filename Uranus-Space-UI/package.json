@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "antd": "^5.16.1",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
-    "react-typed": "^2.0.12"
+    "react-slick": "^0.30.2",
+    "react-typed": "^2.0.12",
+    "svg-to-jsx": "^1.0.4"
   },
   "devDependencies": {
     "@types/node": "^20.12.5",

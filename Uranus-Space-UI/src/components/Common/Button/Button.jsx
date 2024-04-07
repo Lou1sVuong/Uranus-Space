@@ -10,7 +10,7 @@ function Button({
     const getButtonStyle = () => {
       switch (style) {
         case "primary":
-          return "h-[3.25rem] bg-gradient02 text-textW";
+          return "h-[3.25rem] bg-gradient01 text-textW";
         case "secondary":
           return "h-[3.75rem]  bg-callAcction text-textW";
         default:

@@ -1,12 +1,14 @@
 import Hero from '@/components/LandingPage/Hero'
-import Supported from '@/components/LandingPage/Supported'
-import React from 'react'
+import Partners from '@/components/LandingPage/Partners'
+import RoadMapSlide from '@/components/RoadMapSlide/RoadMapSlide'
 
 function Home() {
     return (
         <div className=" ">
             <Hero />
-            <Supported />
+            <Partners />
+            <RoadMapSlide />
+           
         </div>
     )
 }
