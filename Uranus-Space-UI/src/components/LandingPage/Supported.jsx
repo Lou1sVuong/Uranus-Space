@@ -1,5 +1,4 @@
 import Solana from '@/assets/svg/supported/Solana'
-import React from 'react'
 
 function Supported() {
     return (
