@@ -4,16 +4,18 @@ import LaunchPad from '@/assets/image/rocket.png'
 import Outline from '@/assets/svg/hero/Outline'
 import { ReactTyped } from 'react-typed'
 import Button from '../Common/Button/Button'
+import video from '../../assets/image/video.mp4'
 
 function Hero() {
     return (
         <div
             id="#Home"
-            className="flex bg-background w-full px-40 py-32 gap-9 font-bold  text-primary"
+            className="flex relative bg-background w-full py-44 gap-9 font-bold overflow-hidden text-primary"
         >
-            <div className="flex flex-col gap-5 w-[45%]">
-                <h1 className="text-7xl">Uranus Space</h1>
-                <h4 className="text-base text-primary">
+            <video className='p-0 z-0 absolute  top-0' src={video} autoPlay loop muted></video>
+            <div className="flex px-40 z-10 flex-col gap-5 mt-32 ">
+                <h1 className="text-7xl font-bold bg-gradient02 bg-clip-text text-transparent">Uranus Space</h1>
+                <h4 className="text-2xl text-primary">
                     <ReactTyped
                         strings={[
                             '"Next-generation IDO platform solution on Solana"',
@@ -31,7 +33,7 @@ function Hero() {
             </div>
             <div className=" w-[55%]">
                 <div className="relative">
-                    {/* <Outline /> */}
+                    <Outline />
                     <img
                         className="absolute top-[15%] right-0 w-[40%]"
                         src={LaunchPad}
