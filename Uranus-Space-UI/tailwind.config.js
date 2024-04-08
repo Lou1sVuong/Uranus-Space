@@ -5,7 +5,7 @@ export default {
         extend: {
             colors: {
                 background: '#010110',
-                // background: 'rgb(229 246 255)',
+                description: '#B7B4BB',
                 bgsecondary: '#293364',
                 captiontext: '#B7B4BB',
                 primary: '#EFEFFE',
