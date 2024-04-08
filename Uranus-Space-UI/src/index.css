@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #010110;
     font-family: 'Poppins', sans-serif;
@@ -15,3 +18,5 @@ body {
 .slick-dots li.slick-active button:before {
   color:#293364 !important;
 }
+
+

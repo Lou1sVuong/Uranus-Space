@@ -2,26 +2,37 @@ import LaunchPad from '@/assets/svg/LaunchPad'
 import Button from '@Common/Button/Button'
 import logo from '@assets/logo/uranusLogoText.png'
 import ArrowDown from '@assets/svg/ArrowDown'
+import useScroll from '@/hooks/useScroll'
+
 function Header() {
+    const scrollingUp = useScroll()
     return (
-        <nav className="flex justify-between items-center  px-40 py-5 bg-transparent border-b-[1px] z-20 border-border fixed top-0 w-full text-primary">
+        <nav
+            className={`flex justify-between items-center px-40 py-5  z-20  fixed top-0 w-full text-primary transition-colors duration-500 ${scrollingUp ? 'bg-transparent' : 'bg-background border-b-[1px] border-border'}`}
+        >
             <div className="flex gap-10">
                 <div>
-                    <img className="w-[10rem]" src={logo} alt="UranusLogo" />
+                    <a href="#">
+                        <img
+                            className="w-[10rem]"
+                            src={logo}
+                            alt="UranusLogo"
+                        />
+                    </a>
                 </div>
             </div>
             <ul className="flex justify-center items-center gap-11">
                 <li>
                     <a
-                        href="#"
+                        href="#AboutUs"
                         className="flex justify-center items-center gap-2"
                     >
-                        <p>Home</p>
+                        <p>About Us</p>
                     </a>
                 </li>
                 <li>
                     <a
-                        href="#"
+                        href="#HowItWorks"
                         className="flex justify-center items-center gap-2"
                     >
                         <p>How It Works</p>
@@ -29,7 +40,7 @@ function Header() {
                 </li>
                 <li>
                     <a
-                        href="#"
+                        href="#RoadMap"
                         className="flex justify-center items-center gap-2"
                     >
                         <p>RoadMap</p>
@@ -37,7 +48,7 @@ function Header() {
                 </li>
                 <li>
                     <a
-                        href="#"
+                        href="#FAQ"
                         className="flex justify-center items-center gap-2"
                     >
                         <p>FAQ</p>
@@ -45,7 +56,7 @@ function Header() {
                 </li>
                 <li>
                     <a
-                        href="#"
+                        href="##"
                         className="flex justify-center items-center gap-2"
                     >
                         <LaunchPad />

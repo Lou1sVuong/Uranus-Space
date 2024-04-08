@@ -6,13 +6,11 @@ export default {
             colors: {
                 background: '#010110',
                 description: '#B7B4BB',
-
                 bgsecondary: '#293364',
+                bgthird: '#3B3B3B',
                 captiontext: '#B7B4BB',
                 primary: '#EFEFFE',
                 border: '#293364',
-                gradient01:
-                    'linear-gradient(108deg, #342b98 13.57%, #4799c1 97.65%)',
             },
             backgroundImage: {
                 // Gradients
