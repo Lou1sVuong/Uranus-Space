@@ -1,6 +1,3 @@
-import Clock from '@/assets/image/clock.png'
-import Money from '@/assets/image/money.png'
-import LaunchPad from '@/assets/image/rocket.png'
 import { ReactTyped } from 'react-typed'
 import Button from '../Common/Button/Button'
 import video from '../../assets/image/video.mp4'
