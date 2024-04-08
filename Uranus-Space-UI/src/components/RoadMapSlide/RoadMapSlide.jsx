@@ -60,7 +60,7 @@ function CustomArrows() {
                             {roadMapData.map((d) => (
                                 <div
                                     key={d.id}
-                                    className="bg-transparent border-4 border-[#1F2441] h-[450px] text-[#FFF] rounded-xl"
+                                    className="bg-transparent border-4 border-border h-[450px] text-[#FFF] rounded-xl"
                                 >
                                     <div className="flex text-center h-[70%] border-1 border-b border-border  flex-col justify-center rounded-t-xl gap-4 p-4">
                                         <p className="text-center font-semibold text-bg">
