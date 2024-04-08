@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #010110;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: orange !important;
+}
