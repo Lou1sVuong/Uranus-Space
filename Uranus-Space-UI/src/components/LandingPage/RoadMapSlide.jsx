@@ -1,6 +1,5 @@
 import { roadMapData } from '@/data/dataRoadmap'
 import Slider from 'react-slick'
-import CardSlideRoadMap from '../CardSlideRoadMap/CardSlideRoadMap'
 
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons'
 
@@ -47,11 +46,11 @@ function CustomArrows() {
 
     return (
         <>
-            <div className="bg-background">
+            <section id="RoadMap" className="bg-background">
                 <div className="w-4/5 m-auto">
                     <h4 className="text-primary gap-3 text-5xl flex justify-center pt-10 font-bold ">
                         The{' '}
-                        <span className=" bg-gradient02 text-5xl font-bold  bg-clip-text text-transparent">
+                        <span className="  text-5xl font-bold bg-gradient02  bg-clip-text text-transparent">
                             RoadMap
                         </span>
                     </h4>
@@ -60,7 +59,7 @@ function CustomArrows() {
                             {roadMapData.map((d) => (
                                 <div
                                     key={d.id}
-                                    className="bg-transparent border-4 border-border h-[450px] text-[#FFF] rounded-xl"
+                                    className="bg-transparent border-2 border-border h-[450px] text-[#FFF] rounded-xl"
                                 >
                                     <div className="flex text-center h-[70%] border-1 border-b border-border  flex-col justify-center rounded-t-xl gap-4 p-4">
                                         <p className="text-center font-semibold text-bg">
@@ -76,7 +75,7 @@ function CustomArrows() {
                         </Slider>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

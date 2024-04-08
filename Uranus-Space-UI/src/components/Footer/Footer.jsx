@@ -5,7 +5,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 function Footer() {
     return (
-        <footer className="flex flex-col gap-12 mt-20 px-40 mb-14">
+        <footer className="flex flex-col gap-12 mt-20 px-40 mb-14 ">
             <div className="flex justify-between">
                 <section className=" flex flex-col gap-6">
                     <img className="w-[8rem]" src={logo} alt="" />
@@ -24,10 +24,10 @@ function Footer() {
                             Quick Link
                         </p>
                         <div className="flex flex-col gap-3 text-description text-lg  font-normal">
-                            <p>About</p>
-                            <p>How it works</p>
-                            <p>Roadmap</p>
-                            <p>FAQ</p>
+                            <a href="#AboutUs">About Us</a>
+                            <a href="#HowItWorks">How it works</a>
+                            <a href="#RoadMap">Roadmap</a>
+                            <a href="#FAQ">FAQ</a>
                         </div>
                     </div>
                     <div>
@@ -43,7 +43,7 @@ function Footer() {
                 </section>
             </div>
 
-            <div className='flex justify-between'>
+            <div className="flex justify-between">
                 <div className="mt-14 text-description font-normal">
                     Copyright © 2024 Uranus Space
                 </div>
