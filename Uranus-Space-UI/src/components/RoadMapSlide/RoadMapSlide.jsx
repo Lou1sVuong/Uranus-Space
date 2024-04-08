@@ -8,10 +8,10 @@ function SampleNextArrow(props) {
     const { onClick } = props
     return (
         <div
-            className="btnRight absolute top-1/2 transform -translate-y-1/2 -right-20 z-10"
+            className="absolute top-1/2 transform -translate-y-1/2 -right-20 z-10"
             onClick={onClick}
         >
-            <div className="bg-gray-300 rounded-[50%] w-[70px] h-[70px] flex items-center justify-center bg-gradient-to-b from-rgba-249-249-249-26 to-rgba-255-255-255-13 border border-rgba-235-255-249-50 backdrop-blur-20">
+            <div className="bg-opacity-80 hover:bg-opacity-90 bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center  border-[2px] border-bgsecondary">
                 <ArrowRightOutlined />
             </div>
         </div>
@@ -22,10 +22,10 @@ function SamplePrevArrow(props) {
     const { onClick } = props
     return (
         <div
-            className="btnLeft absolute top-1/2 transform -translate-y-1/2 -left-20 z-10"
+            className="absolute top-1/2 transform -translate-y-1/2 -left-20 z-10"
             onClick={onClick}
         >
-            <div className="bg-gray-300 rounded-[50%] w-[70px] h-[70px] flex items-center justify-center bg-gradient-to-b from-rgba-249-249-249-26 to-rgba-255-255-255-13 border border-rgba-235-255-249-50 backdrop-blur-20">
+            <div className="bg-opacity-80 hover:bg-opacity-90 bg-white rounded-full w-[70px] h-[70px] flex items-center justify-center  border-[2px] border-bgsecondary">
                 <ArrowLeftOutlined />
             </div>
         </div>
@@ -41,7 +41,6 @@ function CustomArrows() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
     }
@@ -61,7 +60,7 @@ function CustomArrows() {
                             {roadMapData.map((d) => (
                                 <div
                                     key={d.id}
-                                    className="bg-transparent border-4 border-[#1F2441] h-[450px] text-[#FFF] rounded-xl"
+                                    className="bg-transparent border-4 border-border h-[450px] text-[#FFF] rounded-xl"
                                 >
                                     <div className="flex text-center h-[70%] border-1 border-b border-border  flex-col justify-center rounded-t-xl gap-4 p-4">
                                         <p className="text-center font-semibold text-bg">
