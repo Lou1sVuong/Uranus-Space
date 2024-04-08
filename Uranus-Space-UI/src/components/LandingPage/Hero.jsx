@@ -31,7 +31,7 @@ function Hero() {
             </div>
             <div className=" w-[55%]">
                 <div className="relative">
-                    <Outline />
+                    {/* <Outline /> */}
                     <img
                         className="absolute top-[15%] right-0 w-[40%]"
                         src={LaunchPad}
