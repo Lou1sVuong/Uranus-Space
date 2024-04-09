@@ -1,30 +1,22 @@
-import React from 'react'
-import cross from '@/assets/svg/howitworks/cross-collateral.png'
-import flash from '@/assets/svg/howitworks/flash-loans.png'
-import variable from '@/assets/svg/howitworks/variable-rates.png'
-
 function HowItWorks() {
     const howitworks = [
         {
             id: 1,
-            title: 'Cross Collateral',
+            title: 'Create Project',
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-            image: cross,
+                'Start by creating your project on the platform, outlining its objectives, roadmap, and token distribution plan.',
         },
         {
             id: 2,
-            title: 'Cross Collateral',
+            title: 'Connect Community',
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-            image: flash,
+                'Engage with the community by sharing updates, hosting discussions, and involving them in decision-making processes. Build a strong community around your project.',
         },
         {
             id: 3,
-            title: 'Cross Collateral',
+            title: 'Launching Project',
             description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-            image: variable,
+                'Once ready, launch your project through the platform, allowing investors to contribute in various roles. Tokens are distributed fairly to the early IDO community, promoting inclusivity and participation.',
         },
     ]
 
@@ -36,14 +28,11 @@ function HowItWorks() {
                         key={item.id}
                         className="flex justify-center relative h-[20rem] text-primary bg-bgsecondary rounded-[2rem]"
                     >
-                        <div className="flex justify-center items-center absolute h-[7.5rem] w-[7.5rem] rounded-full top-[-3rem] bg-[#293364] drop-shadow-xl">
-                            <img src={item.image} alt={item.title} />
-                        </div>
-                        <div className="text-center mt-24">
+                        <div className="text-center mt-20">
                             <h3 className="text-xl font-bold mb-4">
                                 {item.title}
                             </h3>
-                            <p className="text-sm">{item.description}</p>
+                            <p className="text-sm p-4">{item.description}</p>
                         </div>
                     </div>
                 ))}
