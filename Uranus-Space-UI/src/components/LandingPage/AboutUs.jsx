@@ -9,10 +9,11 @@ function AboutUs() {
         >
             <div className="flex flex-col gap-4 w-[50%]">
                 <h2 className="text-[3.5rem]">About Us</h2>
-                <p className="text-[1.125rem] mb-8 w-[70%]">
-                    Our core contributors are a team of close-knit engineers
-                    with backgrounds from Google, Facebook, and Microsoft and
-                    who have contributed open source code for Serum and Solana.
+                <p className="text-[1.125rem] mb-8 w-[80%]">
+                    A new IDO platform on Solana allows investors to contribute
+                    to the project in various roles, promoting community
+                    involvement. The project can leverage available resources
+                    and fairly distribute tokens to the early IDO community.
                 </p>
                 <div className="inline-block">
                     <Button style="primary">Connect Wallet</Button>

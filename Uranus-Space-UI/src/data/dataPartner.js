@@ -20,6 +20,10 @@ const partnersData = [
         id: 5,
         image: Solana,
     },
+    {
+        id: 6,
+        image: Solana,
+    },
 ]
 
 export { partnersData }

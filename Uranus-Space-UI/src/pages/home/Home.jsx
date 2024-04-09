@@ -13,8 +13,8 @@ function Home() {
             <Hero />
             <Partners />
             {/* <Supported /> chừng nào có nhiều supported thì để */}
-            <HowItWorks />
             <AboutUs />
+            <HowItWorks />
             <RoadMapSlide />
             <Faq />
         </div>
